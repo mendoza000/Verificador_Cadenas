@@ -13,6 +13,7 @@ def texto_normal():
 	# ----------------
 
 	os.system("cls")
+	titulo()
 	cadena = input("\nIngrese su texto: ")
 
 	for i in cadena:
@@ -52,4 +53,6 @@ def texto_normal():
 	print(f"Barras: {barras}")
 	print(f"Especiales: {especial}")
 	print(f"Numeros: {numero}")
+
+	os.system("pause")
 	pass
