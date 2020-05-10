@@ -1,13 +1,6 @@
 from color import *
 import os
 
-# ---Colores---
-verde    = Green
-rojo     = Red
-reset    = Reset
-amarillo = Yellow
-# -------------
-
 def titulo():
 	os.system("cls")
 	print (amarillo+"		-------------------------------------"+reset)
