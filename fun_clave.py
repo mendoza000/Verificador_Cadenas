@@ -15,7 +15,7 @@ def clave():
 
 	os.system("cls")
 	titulo()
-	cadena = input("\nIngrese su contrase#a: ")
+	cadena = input("Ingrese su contrase#a: ")
 
 	for i in cadena:
 
@@ -59,14 +59,14 @@ def clave():
 	print(f"Numeros: {numero}")
 	print(f"Incorrectos: {incorrecto}\n")
 
-	if (caracter == 8 and espacio == 0 and incorrecto == 0 and punto == 1 or arroba == 1 or barras == 1 or especial == 1 or numero == 1):
-		print(verde+"Su contrase#a cumple con los requisitos minimos."+reset)
+	if (caracter == 8 and espacio == 0 and incorrecto == 0):
+		print(naranja+"[-] "+reset+verde+"Su contrase#A cumple con los requisitos minimos."+reset)
 		pass
-	elif (caracter > 8 and espacio == 0 and incorrecto == 0 and punto > 1 or arroba > 1 or barras > 1 or especial > 1 or numero > 1):
-		print(verde+"Su contrase#a cumple con los requisitos minimos, y se considera bastante fuerte."+reset)
+	elif (caracter >= 8 and espacio == 0 and incorrecto == 0 and numero >= 1 or punto >=1 or arroba >= 1 or barras >= 1 or especial >= 1):
+		print(naranja+"[=] "+reset+verde+"Su contrase#a se considera fuerte."+reset)
 		pass
 	else:
-		print(rojo+"Su contrase#a no cumple con los requisitos minimos."+reset)
+		print(naranja+"[!] "+reset+rojo+"Su contrase#a no cumple los requisitos minimos."+reset)
 		pass
 
 	os.system("pause")
