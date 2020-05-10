@@ -7,5 +7,5 @@ Tambien puede verificar contraseñas para ver si son fuertes o minimamente acept
 Solo hay que abrir el archivo main.py (claramente teniendo python 3.x instalado)
 
 # Version: 1.0
-▪Se crea el proyecto.
-▪Se añaden dos opciones basicas, analizar texto y analizar constraseñas
+_Se crea el proyecto.
+_Se añaden dos opciones basicas, analizar texto y analizar constraseñas
