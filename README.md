@@ -7,4 +7,4 @@ Tambien puede verificar contraseñas para ver si son fuertes o minimamente acept
 Solo hay que abrir el archivo main.py (claramente teniendo python 3.x instalado).\
 O se puede abrir el main.exe que se encuentra en la carpeta dist.
 
-# Version: 1.0
+# Version: 1.2
