@@ -1,4 +1,4 @@
-from membrete import *
+from title import *
 
 def clave():
 
@@ -47,7 +47,7 @@ def clave():
 
 		caracter = caracter +1
 
-	print(amarillo+"\n-----"+reset+rojo+"CONTRASE#A ANALIZADA"+reset+amarillo+"-----"+reset)
+	print(am+"\n-----"+re+ro+"CONTRASE#A ANALIZADA"+re+am+"-----"+re)
 	print(f"\nSu contrase#a tiene... \n")
 
 	print(f"Caracteres totales: {caracter}")
@@ -60,13 +60,13 @@ def clave():
 	print(f"Incorrectos: {incorrecto}\n")
 
 	if (caracter == 8 and espacio == 0 and incorrecto == 0):
-		print(naranja+"[-] "+reset+verde+"Su contrase#A cumple con los requisitos minimos."+reset)
+		print(na+"[-] "+re+ve+"Su contrase#A cumple con los requisitos minimos."+re)
 		pass
 	elif (caracter >= 8 and espacio == 0 and incorrecto == 0 and numero >= 1 or punto >=1 or arroba >= 1 or barras >= 1 or especial >= 1):
-		print(naranja+"[=] "+reset+verde+"Su contrase#a se considera fuerte."+reset)
+		print(na+"[#] "+re+ve+"Su contrase#a se considera fuerte."+re)
 		pass
 	else:
-		print(naranja+"[!] "+reset+rojo+"Su contrase#a no cumple los requisitos minimos."+reset)
+		print(na+"[!] "+re+ro+"Su contrase#a no cumple los requisitos minimos."+re)
 		pass
 
 	os.system("pause")

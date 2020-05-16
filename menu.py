@@ -1,9 +1,9 @@
-from membrete import *
+from title import *
 
 def menu():
-	print(amarillo+"   ----------"+verde+" MENU "+amarillo+"----------"+reset)
-	print(celeste+"1)"+reset+" Analizar textos normales.")
-	print(celeste+"2)"+reset+" Analizar contrase#as.")
-	print(celeste+"3)"+reset+" Salir.")
-	print(amarillo+"   --------------------------\n"+reset)
+	print(am+"   ----------"+ve+" MENU "+am+"----------"+re)
+	print(ce+"1)"+re+" Analizar textos normales.")
+	print(ce+"2)"+re+" Analizar contrase#as.")
+	print(ce+"3)"+re+" Salir.")
+	print(am+"   --------------------------\n"+re)
 	pass

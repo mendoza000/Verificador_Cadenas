@@ -1,4 +1,4 @@
-from membrete import *
+from title import *
 
 def texto_normal():
 
@@ -43,7 +43,7 @@ def texto_normal():
 
 		caracter = caracter +1
 
-	print(amarillo+"\n-----"+reset+rojo+"TEXTO ANALIZADO"+reset+amarillo+"-----"+reset)
+	print(am+"\n-----"+re+ro+"TEXTO ANALIZADO"+re+am+"-----"+re)
 	print(f"\nSu texto tiene... \n")
 
 	print(f"Caracteres totales: {caracter}")
