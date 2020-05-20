@@ -1,7 +1,8 @@
-from color import *
 import os
 
-ver = (ce+"1.2")
+from color import *
+
+ver = (ce+"1.3")
 aut = (mo+"Omar_Mendoza.")
 
 def titulo():

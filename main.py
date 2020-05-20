@@ -1,36 +1,56 @@
-# @Author: Omar_Mendoza.
-# @Version: 1.2
-# web: github.com/OmarMendozaDev/Verificador_Cadenas/
+"""
+	@Author: Omar_Mendoza.
+	@Version: 1.3
+	Web: github.com/OmarMendozaDev/Verificador_Cadenas/
+"""
 
-from title import *
-from menu import *
-from fun_texto_normal import *
-from fun_clave import *
+
+# Importa funciones de otros archivos para estar mas ordenado.
 from color import *
+from fun_clave import *
+from fun_texto_normal import *
+from menu import *
+from title import *
 
+# Variables esenciales.
 opc = 0
 fails = 0
 alert = (am+"["+ro+"!"+am+"] "+re)
 salt = ("\n")
 
+# Se llaman funciones externas...
 titulo()
 menu()
-opc = int(input("Ingrese su opcion: "))
 
-while (opc > 3 or opc <= 0):
+# while para verificar lo que ingrese el usuario
+# soporta numeros incorrectos y letras.
+while True:
 
-	print(salt+alert+"Opcion incorrecta.")
-
+	# Cuenta las veces que ha fallado el usuario
+	# Si falla muchas veces, el programa se cierra.
 	if (fails > 2):
 		print(alert+"Realizo muchos intentos fallidos, el programa finalizara.")
 		os.system("pause")
 		break;
 		
-	opc = int(input("Ingrese su opcion: "))
-	fails = fails +1
+	# Se verifican si lo ingresado es correcto
+	try:
+		opc = int(input("Ingrese su opcion: "))
 
-	pass
+		if(opc < 0 or opc > 3):
+			print(salt+alert+"Solo estan habilitadas las opciones '1', '2' y '3'")
+			print(alert+"Intente nuevamente."+salt)
+			fails = fails +1
+			continue
+		else:
+			break
+	# Si se obtiene un error por ingresar cadenas, el programa pide nuevamente que se ingrese la opcion, se suma el fallo.
+	except ValueError:
+		print(salt+alert+"No se admiten letras, solo numeros de 1 a 3")
+		print(alert+"Intente nuevamente."+salt)
+		fails = fails +1
 
+# Se ejecutan funciones segun la opcion.
 if (opc == 1):
 	texto_normal()
 	pass
