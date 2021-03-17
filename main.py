@@ -1,6 +1,6 @@
 """
 	@Author: Omar_Mendoza.
-	@Version: 1.3
+	@Version: 1.3.
 	Web: github.com/OmarMendozaDev/Verificador_Cadenas/
 """
 
